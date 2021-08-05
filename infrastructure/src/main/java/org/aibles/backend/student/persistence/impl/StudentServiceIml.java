@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import org.aibles.backend.student.Student;
 import org.aibles.backend.student.persistence.entities.StudentEntity;
 import org.aibles.backend.student.persistence.repositories.StudentRepository;
-import org.aibles.backend.student.ports.StudentService;
+import org.aibles.backend.student.ports.StudentRepositoryService;
 import org.aibles.backend.student.shared.RepositoryConverter;
 
 import java.util.Collection;
 import java.util.stream.Collectors;
 
 @AllArgsConstructor
-public class StudentServiceIml implements StudentService {
+public class StudentServiceIml implements StudentRepositoryService {
 
     private final StudentRepository studentRepository;
     private final RepositoryConverter<StudentEntity, Student> studentRepositoryConverter;
@@ -35,6 +35,15 @@ public class StudentServiceIml implements StudentService {
     @Override
     public Boolean doesStudentExists(Integer studentId) {
         return studentRepository.findById(studentId)
+                .map(studentEntity -> {
+                    return true;
+                })
+                .orElse(false);
+    }
+
+    @Override
+    public Boolean doesStudentCodeExists(String studentCode) {
+        return studentRepository.findByStudentCode(studentCode)
                 .map(studentEntity -> {
                     return true;
                 })

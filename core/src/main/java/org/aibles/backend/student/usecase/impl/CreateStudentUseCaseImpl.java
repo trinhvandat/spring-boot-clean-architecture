@@ -1,17 +1,23 @@
 package org.aibles.backend.student.usecase.impl;
 
 import lombok.AllArgsConstructor;
+import org.aibles.backend.exceptions.StudentCodeAlreadyExistsException;
 import org.aibles.backend.student.Student;
-import org.aibles.backend.student.ports.StudentService;
+import org.aibles.backend.student.ports.StudentRepositoryService;
 import org.aibles.backend.student.usecase.CreateStudentUseCase;
 
 @AllArgsConstructor
 public class CreateStudentUseCaseImpl implements CreateStudentUseCase {
 
-    private final StudentService studentService;
+    private final StudentRepositoryService studentRepositoryService;
 
     @Override
-    public Student execute(Student student) {
-        return studentService.saveStudent(student);
+    public Student execute(Student student) throws StudentCodeAlreadyExistsException{
+        if (!studentRepositoryService.doesStudentCodeExists(student.getStudentCode())){
+            return studentRepositoryService.saveStudent(student);
+        }
+        else {
+            throw new StudentCodeAlreadyExistsException();
+        }
     }
 }
