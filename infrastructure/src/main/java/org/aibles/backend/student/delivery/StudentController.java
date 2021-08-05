@@ -2,7 +2,7 @@ package org.aibles.backend.student.delivery;
 
 import org.aibles.backend.student.delivery.rest.dto.StudentDTO;
 import org.aibles.backend.student.delivery.responses.SystemResponse;
-import org.aibles.backend.student.shared.exceptions.BadRequestException;
+import org.aibles.backend.shared.exceptions.BadRequestException;
 
 import java.util.Collection;
 

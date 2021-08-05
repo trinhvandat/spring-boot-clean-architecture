@@ -2,7 +2,7 @@ package org.aibles.backend.student.delivery.converters;
 
 import org.aibles.backend.student.Student;
 import org.aibles.backend.student.delivery.rest.dto.StudentDTO;
-import org.aibles.backend.student.shared.RestDTOConverter;
+import org.aibles.backend.shared.RestDTOConverter;
 
 public class StudentRestDTOConverter implements RestDTOConverter<StudentDTO, Student>{
 

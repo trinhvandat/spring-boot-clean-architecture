@@ -2,8 +2,8 @@ package org.aibles.backend.student.delivery.impl;
 
 import org.aibles.backend.student.delivery.StudentControllerAdvice;
 import org.aibles.backend.student.delivery.responses.SystemResponse;
-import org.aibles.backend.student.shared.constants.CommonConstants;
-import org.aibles.backend.student.shared.exceptions.BadRequestException;
+import org.aibles.backend.shared.constants.CommonConstants;
+import org.aibles.backend.shared.exceptions.BadRequestException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

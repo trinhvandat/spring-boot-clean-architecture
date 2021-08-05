@@ -1,16 +1,16 @@
 package org.aibles.backend.student.delivery.impl;
 
 import lombok.AllArgsConstructor;
-import org.aibles.backend.exceptions.StudentCodeAlreadyExistsException;
+import org.aibles.backend.student.exceptions.StudentCodeAlreadyExistsException;
 import org.aibles.backend.student.Student;
 import org.aibles.backend.student.delivery.StudentController;
 import org.aibles.backend.student.delivery.responses.SystemResponse;
 import org.aibles.backend.student.delivery.rest.dto.StudentDTO;
-import org.aibles.backend.student.shared.RestDTOConverter;
-import org.aibles.backend.student.shared.constants.CommonConstants;
-import org.aibles.backend.student.shared.constants.ExceptionConstants;
-import org.aibles.backend.student.shared.constants.RestConstants;
-import org.aibles.backend.student.shared.exceptions.BadRequestException;
+import org.aibles.backend.shared.RestDTOConverter;
+import org.aibles.backend.shared.constants.CommonConstants;
+import org.aibles.backend.shared.constants.ExceptionConstants;
+import org.aibles.backend.shared.constants.RestConstants;
+import org.aibles.backend.shared.exceptions.BadRequestException;
 import org.aibles.backend.student.usecase.CreateStudentUseCase;
 import org.aibles.backend.student.usecase.GetAllStudentsUseCase;
 import org.springframework.http.HttpStatus;

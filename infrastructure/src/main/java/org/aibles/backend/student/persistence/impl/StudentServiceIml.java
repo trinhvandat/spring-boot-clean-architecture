@@ -5,7 +5,7 @@ import org.aibles.backend.student.Student;
 import org.aibles.backend.student.persistence.entities.StudentEntity;
 import org.aibles.backend.student.persistence.repositories.StudentRepository;
 import org.aibles.backend.student.ports.StudentRepositoryService;
-import org.aibles.backend.student.shared.RepositoryConverter;
+import org.aibles.backend.shared.RepositoryConverter;
 
 import java.util.Collection;
 import java.util.stream.Collectors;

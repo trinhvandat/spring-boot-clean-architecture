@@ -1,4 +1,4 @@
-package org.aibles.backend.student.shared;
+package org.aibles.backend.shared;
 
 import java.io.Serializable;
 

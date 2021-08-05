@@ -1,4 +1,4 @@
-package org.aibles.backend.exceptions;
+package org.aibles.backend.student.exceptions;
 
 public class StudentCodeAlreadyExistsException extends RuntimeException{
 

@@ -2,7 +2,7 @@ package org.aibles.backend.student.persistence.converters;
 
 import org.aibles.backend.student.Student;
 import org.aibles.backend.student.persistence.entities.StudentEntity;
-import org.aibles.backend.student.shared.RepositoryConverter;
+import org.aibles.backend.shared.RepositoryConverter;
 
 public class StudentRepositoryConverter implements RepositoryConverter<StudentEntity, Student> {
 

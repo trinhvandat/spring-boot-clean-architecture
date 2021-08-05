@@ -1,4 +1,4 @@
-package org.aibles.backend.student.shared.exceptions;
+package org.aibles.backend.shared.exceptions;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;

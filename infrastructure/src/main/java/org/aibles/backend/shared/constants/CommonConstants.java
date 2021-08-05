@@ -1,4 +1,4 @@
-package org.aibles.backend.student.shared.constants;
+package org.aibles.backend.shared.constants;
 
 public class CommonConstants {
     public static final String SUCCESS = "Success";

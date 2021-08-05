@@ -1,7 +1,7 @@
 package org.aibles.backend.student.usecase.impl;
 
 import lombok.AllArgsConstructor;
-import org.aibles.backend.exceptions.StudentCodeAlreadyExistsException;
+import org.aibles.backend.student.exceptions.StudentCodeAlreadyExistsException;
 import org.aibles.backend.student.Student;
 import org.aibles.backend.student.ports.StudentRepositoryService;
 import org.aibles.backend.student.usecase.CreateStudentUseCase;

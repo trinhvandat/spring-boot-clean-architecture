@@ -1,4 +1,4 @@
-package org.aibles.backend.student.shared.constants;
+package org.aibles.backend.shared.constants;
 
 public class RestConstants {
     public static final String API_VERSION_1 = "/v1";
